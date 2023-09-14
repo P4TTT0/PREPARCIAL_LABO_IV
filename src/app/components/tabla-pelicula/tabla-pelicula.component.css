@@ -1,0 +1,14 @@
+.table
+{
+    background-color: #43403B;
+    border-radius: 10px;
+    color: #F4E9CD;
+}
+
+td
+{
+    background-color: #2E2C28;
+    color: #F4E9CD;
+    border-bottom: solid 10px #5B5750;
+
+}

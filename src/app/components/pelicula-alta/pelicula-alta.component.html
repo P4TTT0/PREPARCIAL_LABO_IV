@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="screen">
+        <form>
+            <h2>Peliculas</h2>
+            <div class="field">
+                <input type="text" class="login-input" placeholder="Nombre" [(ngModel)]="nombre" name="nombre">
+            </div>
+            <div class="field">
+                <input type="text" class="login-input" placeholder="Tipo" [(ngModel)]="tipo" name="tipo">
+            </div>
+            <div class="field">
+                <input type="date" class="login-input" [(ngModel)]="fechaEstreno" name="fechaEstreno">
+            </div>
+            <div class="field">
+                <input type="text" class="login-input" placeholder="Cantidad publico" [(ngModel)]="cantidadPublico" name="cantidadPublico">
+            </div>
+            <button type="button" class="btn btn-success">
+                <span (click)="OnSaveClick()" class="button__text">Guardar</span>
+            </button>
+        </form>
+    </div>
+</div>

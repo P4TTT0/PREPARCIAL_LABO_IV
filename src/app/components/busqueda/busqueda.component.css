@@ -1,0 +1,26 @@
+.main-list
+{
+    background-color: #5B5750;
+    padding: 30px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: solid 7px #2E2C28;
+}
+
+.btn-style
+{
+    margin-bottom: 20px;
+    background-color: #43403B;
+    border-radius: 0px 0px 5px 5px;
+    border-top: solid 3px #2E2C28;
+    color: #F4E9CD;
+    font-weight: 900;
+    margin-right: 12px;
+}
+
+.j
+{
+    width: 600px;
+    height: 300px;
+    background-color: aqua;
+    margin: 20px 0px;
+}

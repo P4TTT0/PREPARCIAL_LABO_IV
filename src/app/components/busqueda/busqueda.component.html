@@ -1,0 +1,29 @@
+<div class="container main-list">
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-style">
+            <span (click)="OnNewClick()" class="button__text">Nueva pelicula</span>
+        </button>
+    </div>
+    <div class="container">
+        <app-tabla-pelicula [peliculas]="peliculas"></app-tabla-pelicula>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-around align-items-center">
+        <div class="col-sm-6 j">
+            <div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 j">
+            <div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 j">
+            <div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+</div>

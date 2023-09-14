@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Fecha estreno</th>
+        <th>Cantidad publico</th>
+        <th>Foto pelicula</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pelicula of peliculas">
+            <td>{{ pelicula.nombre }}</td>
+            <td>{{ pelicula.tipo }}</td>
+            <td>{{ pelicula.fechaEstreno }}</td>
+            <td>{{ pelicula.cantidadPublico }}</td>
+            <td>{{ pelicula.fotoPelicula }}</td>
+        </tr>
+    </tbody>
+</table>
