@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Pelicula } from 'src/app/clases/pelicula';
 
 @Component({
@@ -9,9 +9,15 @@ import { Pelicula } from 'src/app/clases/pelicula';
 export class TablaPeliculaComponent 
 {
   @Input() peliculas : Pelicula[];
+  @Output() detallePelicula = new EventEmitter<Pelicula>();
 
   constructor()
   {
     this.peliculas = [];
   }
+
+  public verDetalles(pelicula : Pelicula)
+  {
+    this.detallePelicula.emit(pelicula);
+  } 
 }

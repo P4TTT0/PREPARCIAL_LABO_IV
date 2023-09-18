@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Pelicula, tipo } from 'src/app/clases/pelicula';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pelicula-alta',
@@ -13,6 +14,11 @@ export class PeliculaAltaComponent
   fechaEstreno : Date = new Date();
   cantidadPublico : string = "";
 
+  constructor(private router: Router) 
+  {
+
+  }
+
   public OnSaveClick()
   {
     try
@@ -22,12 +28,18 @@ export class PeliculaAltaComponent
   
       pelicula.setLocalStorage();
 
-      alert("¡Pelicula almacenada correctamente!")
+      alert("¡Pelicula almacenada correctamente!");
+      this.router.navigateByUrl("busqueda")
     }
     catch(ex)
     {
-      alert("¡La pelicula no puedo almacenarse!")
+      alert("¡La pelicula no puedo almacenarse!");
     }
+  }
+
+  public OnCancelClick()
+  {
+    this.router.navigateByUrl("busqueda")
   }
 
   private convertStringToEnum(str: unknown): tipo 

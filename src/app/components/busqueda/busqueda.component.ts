@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pelicula } from 'src/app/clases/pelicula';
+import { Pelicula, tipo } from 'src/app/clases/pelicula';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class BusquedaComponent implements OnInit
 {
   peliculas : Pelicula[] = [];
+  pelicula : Pelicula = new Pelicula("", tipo.Otros, new Date(), 0, "");
 
   constructor(private router: Router) 
   {
@@ -23,6 +24,11 @@ export class BusquedaComponent implements OnInit
 
   public OnNewClick()
   {
+    this.router.navigateByUrl("peliculas/alta")
+  }
 
+  public recibirDetallePelicula(pelicula : Pelicula)
+  {
+    this.pelicula = pelicula;
   }
 }

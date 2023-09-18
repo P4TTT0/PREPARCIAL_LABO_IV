@@ -5,7 +5,7 @@
         </button>
     </div>
     <div class="container">
-        <app-tabla-pelicula [peliculas]="peliculas"></app-tabla-pelicula>
+        <app-tabla-pelicula [peliculas]="peliculas" (detallePelicula)="recibirDetallePelicula($event)"></app-tabla-pelicula>
     </div>
 </div>
 <div class="container-fluid">
@@ -17,7 +17,7 @@
         </div>
         <div class="col-sm-6 j">
             <div>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <app-detalle-pelicula [pelicula]="pelicula"></app-detalle-pelicula>
             </div>
         </div>
         <div class="col-sm-6 j">

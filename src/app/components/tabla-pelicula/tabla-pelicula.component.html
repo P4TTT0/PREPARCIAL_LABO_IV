@@ -5,6 +5,7 @@
         <th>Fecha estreno</th>
         <th>Cantidad publico</th>
         <th>Foto pelicula</th>
+        <th>Acciones</th>
     </thead>
     <tbody>
         <tr *ngFor="let pelicula of peliculas">
@@ -13,6 +14,12 @@
             <td>{{ pelicula.fechaEstreno }}</td>
             <td>{{ pelicula.cantidadPublico }}</td>
             <td>{{ pelicula.fotoPelicula }}</td>
+            <td>
+                <!-- Botón para ver detalles -->
+                <button class="btn btn-dark" (click)="verDetalles(pelicula)">Detalles</button>
+                <!-- Botón para borrar -->
+                <!-- <button class="btn" (click)="borrarPelicula(pelicula)">Borrar</button> -->
+            </td>
         </tr>
     </tbody>
 </table>
