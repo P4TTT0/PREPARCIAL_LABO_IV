@@ -11,6 +11,7 @@ import { PeliculaListadoComponent } from './components/pelicula-listado/pelicula
 import { TablaPeliculaComponent } from './components/tabla-pelicula/tabla-pelicula.component';
 import { FormsModule } from '@angular/forms';
 import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-pelicula.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-
     ActorListadoComponent,
     PeliculaListadoComponent,
     TablaPeliculaComponent,
-    DetallePeliculaComponent
+    DetallePeliculaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

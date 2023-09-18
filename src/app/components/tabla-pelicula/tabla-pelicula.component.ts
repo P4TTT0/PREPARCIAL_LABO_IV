@@ -20,4 +20,9 @@ export class TablaPeliculaComponent
   {
     this.detallePelicula.emit(pelicula);
   } 
+
+  public borrarPelicula(pelicula : Pelicula)
+  {
+    
+  }
 }

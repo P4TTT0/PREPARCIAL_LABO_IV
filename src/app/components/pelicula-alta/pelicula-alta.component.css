@@ -39,3 +39,59 @@
     margin-left: 20px;
     border-radius: 0px 0px 5px 5px;
 }
+
+.btn-style
+{
+    background-color: #43403B;
+    border: none;
+    border-bottom: solid 3px #151412;
+    width: 80px;
+    border-radius: 0px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.btn-style:hover
+{
+    background-color: #2E2C28;
+}
+
+.radio
+{
+    margin-bottom: 15px;
+}
+
+.radio-button input
+{
+    display: none;
+}
+
+.radio-button label 
+{
+    background-color: #43403B;
+    border: none;
+    border-bottom: solid 3px #151412;
+    width: 80px;
+    border-radius: 0px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.radio-button input[type="radio"]:checked+label {
+    background-color: #2E2C28;
+}
+
+.radio-button
+{
+    display: flex;
+    flex-direction: row;
+}

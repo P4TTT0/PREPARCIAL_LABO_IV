@@ -8,7 +8,24 @@
             </div>
             <div class="field">
                 <span class="text-feild">Tipo </span>
-                <input type="text" class="login-input" placeholder="Tipo" [(ngModel)]="tipo" name="tipo">
+                <div class="radio-button">
+                    <div>
+                        <input type="radio" id="amor-radio" name="radios" [(ngModel)]="tipo" value="Amor" checked>
+                        <label for="amor-radio">Amor</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="terror-radio" name="radios" [(ngModel)]="tipo" value="Terror">
+                        <label for="terror-radio">Terror</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="comedia-radio" name="radios" [(ngModel)]="tipo" value="Comedia">
+                        <label for="comedia-radio">Comedia</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="otros-radio" name="radios" [(ngModel)]="tipo" value="Otros">
+                        <label for="otros-radio">Otros</label>
+                    </div>
+                </div>
             </div>
             <div class="field">
                 <span class="text-feild">Fecha de estreno </span>

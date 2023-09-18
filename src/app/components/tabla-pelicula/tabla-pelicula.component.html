@@ -16,9 +16,13 @@
             <td>{{ pelicula.fotoPelicula }}</td>
             <td>
                 <!-- Botón para ver detalles -->
-                <button class="btn btn-dark" (click)="verDetalles(pelicula)">Detalles</button>
+                <button class="btn btn-style" (click)="verDetalles(pelicula)">
+                    <i class="bi bi-info-circle"></i> 
+                </button>
                 <!-- Botón para borrar -->
-                <!-- <button class="btn" (click)="borrarPelicula(pelicula)">Borrar</button> -->
+                <button class="btn btn-style" (click)="borrarPelicula(pelicula)">
+                    <i class="bi bi-trash"></i> 
+                </button>
             </td>
         </tr>
     </tbody>
