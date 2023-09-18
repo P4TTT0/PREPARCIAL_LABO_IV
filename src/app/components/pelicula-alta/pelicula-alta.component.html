@@ -35,6 +35,13 @@
                 <span class="text-feild">Cantidad de publico </span>
                 <input type="text" class="login-input" placeholder="Cantidad publico" [(ngModel)]="cantidadPublico" name="cantidadPublico">
             </div>
+            <div class="field">
+                <span class="text-feild">Imagen </span>
+                <input type="file" class="input-group-prepend" (change)="onImageSelected($event)" accept="image/*">
+            </div>
+            <div class="d-flex justify-content-center align-items-center" *ngIf="foto">
+                <img class="image" [src]="foto" alt="Imagen seleccionada">
+            </div>
             <div class="d-flex justify-content-end">
                 <button type="button" class="btn btn-dark">
                     <span (click)="OnCancelClick()" class="button__text">Cancelar</span>

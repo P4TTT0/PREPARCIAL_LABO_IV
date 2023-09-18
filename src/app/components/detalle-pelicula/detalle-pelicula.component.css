@@ -10,6 +10,18 @@
     align-items: center;
     background-color: #2E2C28;
     margin: 10px 0px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
+    width: 100%;
+}
+
+.image-container
+{
+    width: 150px;
+}
+
+.image
+{
+    border-radius: 10px 10px 0px 10px;
+    width: 150px;
 }

@@ -95,3 +95,51 @@
     display: flex;
     flex-direction: row;
 }
+
+.input-group-prepend
+{
+    outline: none;
+    border: none;
+    border-radius: 0px 10px 0px 10px;
+    background-color: #43403B;
+    padding: 10px;
+    width: 190px;
+    color: transparent;
+    border-bottom:solid 3px #151412;
+    transition: 0.2s ease-out;
+}
+
+.input-group-prepend:hover
+{
+    background-color: #2b2926;
+}
+
+.input-group-prepend:active
+{
+    background-color: #1f1e1c;
+}
+
+.input-group-prepend::before 
+{
+    content: 'Seleccionar archivo';
+    display: inline-block;
+    color: #757575;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.input-group-prepend::-webkit-file-upload-button 
+{
+    visibility: hidden;
+}
+
+.image
+{
+    width: 400px;
+    border-radius: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
