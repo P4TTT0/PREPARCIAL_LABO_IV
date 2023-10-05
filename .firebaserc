@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "pre-parcial-labo"
+  },
+  "targets": {
+    "pre-parcial-labo": {
+      "hosting": {
+        "preParcial": [
+          "pre-parcial-labo"
+        ]
+      }
+    }
   }
 }

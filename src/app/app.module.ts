@@ -14,6 +14,8 @@ import { TablaPeliculaComponent } from './components/tabla-pelicula/tabla-pelicu
 import { FormsModule } from '@angular/forms';
 import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-pelicula.component';
 import { HomeComponent } from './components/home/home.component';
+import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { HomeComponent } from './components/home/home.component';
     TablaPeliculaComponent,
     DetallePeliculaComponent,
     HomeComponent,
+    TablaPaisesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
