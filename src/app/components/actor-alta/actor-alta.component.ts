@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { count } from 'rxjs';
+import { DataService } from 'src/app/services/data.service';
 // import { DatabaseService } from './../../services/database.service';
 
 @Component({
@@ -14,7 +17,7 @@ export class ActorAltaComponent
   pais : string = "";
   bandera : any;
 
-  // constructor(private database : DatabaseService) { }
+  constructor(private data : DataService, private toast : ToastrService, private router : Router) { }
 
   public receiveCountry(country : any)
   {
@@ -22,8 +25,18 @@ export class ActorAltaComponent
     this.bandera = country.flags.svg;
   }
 
-  public OnSaveClick()
+  public async OnSaveClick()
   {
-    // this.database.saveActor(this.nombre, this.apellido, this.pais);
+    const itsOk = await this.data.saveActor(this.nombre, this.apellido, this.pais);
+    if(itsOk)
+    {
+      this.toast.success("Actor agregado correctamente");
+      this.router.navigateByUrl("bienvenido");
+    }
+    else
+    {
+      this.toast.error("El actor no pudo agregarse correctamente");
+    }
+    
   }
 }
