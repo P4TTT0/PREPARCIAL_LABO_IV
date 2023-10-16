@@ -1,0 +1,29 @@
+<div class="container main-list">
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-style">
+            <span (click)="OnNewClick()" class="button__text">Nuevo actor</span>
+        </button>
+    </div>
+    <div class="container">
+        <app-tabla-actor [actores]="actores" (actor)="recibirActor($event)"></app-tabla-actor>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-around align-items-center">
+        <div class="col-sm-6 j">
+            <div>
+                <app-actor-pelicula [actor]="actor" [peliculas]="peliculas"></app-actor-pelicula>
+            </div>
+        </div>
+        <div class="col-sm-6 j">
+            <div>
+                <app-detalle-pais [pais]="pais"></app-detalle-pais>
+            </div>
+        </div>
+        <div class="col-sm-6 j">
+            <div>
+                <app-detalle-actor [actor]="actor"></app-detalle-actor>
+            </div>
+        </div>
+    </div>
+</div>

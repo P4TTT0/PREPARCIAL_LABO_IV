@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="screen" *ngIf="actor.Nombre !== ''">
+        <h2>Detalle actor</h2>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="desc-container">
+                <div class="desc-feild">
+                    <span>Nombre</span>
+                    <h4>{{actor.Nombre}}</h4>
+                </div>
+                <div class="desc-feild">
+                    <span>Apellido</span>
+                    <h4>{{actor.Apellido}}</h4>
+                </div>
+                <div class="desc-feild">
+                    <span>Pais</span>
+                    <h4>{{actor.Pais}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

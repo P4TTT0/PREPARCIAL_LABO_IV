@@ -36,6 +36,10 @@
                 <input type="text" class="login-input" placeholder="Cantidad publico" [(ngModel)]="cantidadPublico" name="cantidadPublico">
             </div>
             <div class="field">
+                <span class="text-feild">Actor </span>
+                <input type="text" class="login-input" placeholder="Actor" [(ngModel)]="actor" name="actor">
+            </div>
+            <div class="field">
                 <span class="text-feild">Imagen </span>
                 <input type="file" class="input-group-prepend" (change)="onImageSelected($event)" accept="image/*">
             </div>
@@ -51,5 +55,10 @@
                 </button>
             </div>
         </form>
+    </div>
+    <div class="screen-container col-sm-12">
+        <div class="screen" style="width: 600px;">
+            <app-tabla-actores  (actorsData)="receiveActors($event)" ></app-tabla-actores>
+        </div>
     </div>
 </div>

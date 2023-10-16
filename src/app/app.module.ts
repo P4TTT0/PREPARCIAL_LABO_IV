@@ -21,7 +21,13 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-import { AngularFireModule } from '@angular/fire/compat'
+import { AngularFireModule } from '@angular/fire/compat';
+import { ActorPeliculaComponent } from './components/actor-pelicula/actor-pelicula.component';
+import { TablaActorComponent } from './components/tabla-actor/tabla-actor.component';
+import { BusquedaActorComponent } from './components/busqueda-actor/busqueda-actor.component';
+import { TablaActoresComponent } from './components/tabla-actores/tabla-actores.component';
+import { DetallePaisComponent } from './components/detalle-pais/detalle-pais.component';
+import { DetalleActorComponent } from './components/detalle-actor/detalle-actor.component'
 
 @NgModule({
   declarations: [
@@ -35,6 +41,12 @@ import { AngularFireModule } from '@angular/fire/compat'
     DetallePeliculaComponent,
     HomeComponent,
     TablaPaisesComponent,
+    ActorPeliculaComponent,
+    TablaActorComponent,
+    BusquedaActorComponent,
+    TablaActoresComponent,
+    DetallePaisComponent,
+    DetalleActorComponent,
   ],
   imports: [
     BrowserModule,

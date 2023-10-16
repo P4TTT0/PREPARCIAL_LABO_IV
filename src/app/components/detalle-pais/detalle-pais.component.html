@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="screen" *ngIf="pais.name.common !== ''">
+        <h2>Detalle pais</h2>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="desc-container">
+                <div class="d-flex">
+                    <div class="desc-feild">
+                        <span>Nombre</span>
+                        <h4>{{pais.name.common}}</h4>
+                    </div>
+                    <div *ngIf="pais.flags.svg != ''" class="d-flex justify-content-center align-items-center">
+                        <img [src]="pais.flags.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

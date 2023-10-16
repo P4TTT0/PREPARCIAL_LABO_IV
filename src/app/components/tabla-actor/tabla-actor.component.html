@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Pais</th>
+        <th>Acciones</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let actor of actores">
+            <td>{{ actor.Nombre }}</td>
+            <td>{{ actor.Apellido }}</td>
+            <td>{{ actor.Pais }}</td>
+            <td>
+                <!-- Botón para ver detalles -->
+                <button class="btn btn-style" (click)="seleccionarActor(actor)">
+                    <i class="bi bi-info-circle"></i> 
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

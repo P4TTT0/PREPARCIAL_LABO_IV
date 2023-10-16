@@ -8,10 +8,10 @@
     </thead>
     <tbody>
         <tr *ngFor="let pelicula of peliculas">
-            <td>{{ pelicula.nombre }}</td>
-            <td>{{ pelicula.tipo }}</td>
-            <td>{{ pelicula.fechaEstreno }}</td>
-            <td>{{ pelicula.cantidadPublico }}</td>
+            <td>{{ pelicula.Nombre }}</td>
+            <td>{{ pelicula.Tipo }}</td>
+            <td>{{ pelicula.FechaEstreno }}</td>
+            <td>{{ pelicula.CantidadPublico }}</td>
             <td>
                 <!-- Botón para ver detalles -->
                 <button class="btn btn-style" (click)="verDetalles(pelicula)">

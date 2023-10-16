@@ -1,0 +1,18 @@
+<div>
+    <input type="text" placeholder="Buscar actor" [(ngModel)]="searchTerm" (input)="filterActors()">
+</div>
+<div class="country-list-container">
+    <div class="country-list">
+      <div
+        class="country-card"
+        *ngFor="let actor of filteredActors"
+        [class.selected]="actor === selectedActor"
+        (click)="selectActor(actor)"
+      >
+        <h1>{{actor.Nombre}}</h1>
+        <p>{{actor.Apellido}}</p>
+        <p>{{actor.Pais}}</p>
+      </div>
+    </div>
+</div>
+  

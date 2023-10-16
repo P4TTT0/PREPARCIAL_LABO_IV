@@ -8,5 +8,5 @@ import { Pelicula, tipo } from 'src/app/clases/pelicula';
 })
 export class DetallePeliculaComponent 
 {
-  @Input() pelicula : Pelicula = new Pelicula("", tipo.Otros, new Date(), 0, "");
+  @Input() pelicula : any;
 }

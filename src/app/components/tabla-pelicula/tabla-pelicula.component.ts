@@ -8,7 +8,7 @@ import { Pelicula } from 'src/app/clases/pelicula';
 })
 export class TablaPeliculaComponent 
 {
-  @Input() peliculas : Pelicula[];
+  @Input() peliculas : any;
   @Output() detallePelicula = new EventEmitter<Pelicula>();
 
   constructor()

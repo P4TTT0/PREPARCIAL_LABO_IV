@@ -39,4 +39,9 @@ export class ActorAltaComponent
     }
     
   }
+
+  public async OnCancelClick()
+  {
+    this.router.navigateByUrl('/actores')
+  }
 }

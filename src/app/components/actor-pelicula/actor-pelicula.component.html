@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="screen" *ngIf="actor.Nombre !== ''">
+        <h2>Peliculas de {{actor.Nombre + ' ' + actor.Apellido}}</h2>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="desc-container">
+                <div class="d-flex">                
+                    <div class="desc-feild" *ngFor="let pelicula of peliculas">
+                        <span>Pelicula</span>
+                        <h4>{{pelicula.Nombre}}</h4>
+                    </div>
+            </div>
+            <!-- <div class="image-container">
+                <ng-container *ngIf="pelicula.Imagen.length > 0; else noImageTemplate">
+                    <img class="image" [src]="pelicula.Imagen">
+                </ng-container>
+                <ng-template #noImageTemplate>
+                    <img class="image" [src]="'./../../assets/noimage.jpg'">
+                </ng-template>
+            </div> -->
+        </div>
+    </div>
+</div>

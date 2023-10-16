@@ -1,3 +1,5 @@
+import { Actor } from "./actor";
+
 export class Pelicula 
 {
     id : number;
@@ -6,8 +8,9 @@ export class Pelicula
     fechaEstreno : Date;
     cantidadPublico : number;
     fotoPelicula : string;
+    actor: string;
 
-    constructor(nombre : string, tipo : tipo, fechaEstreno : Date, cantidadPublico : number, fotoPelicula : string)
+    constructor(nombre : string, tipo : tipo, fechaEstreno : Date, cantidadPublico : number, fotoPelicula : string, actor : string)
     {
         this.id = -1;
         this.nombre = nombre;
@@ -15,6 +18,7 @@ export class Pelicula
         this.fechaEstreno = fechaEstreno;
         this.cantidadPublico = cantidadPublico;
         this.fotoPelicula = fotoPelicula;
+        this.actor = actor;
     }
 
     setLocalStorage() 

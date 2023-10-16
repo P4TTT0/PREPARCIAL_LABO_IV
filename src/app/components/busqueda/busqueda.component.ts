@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Pelicula, tipo } from 'src/app/clases/pelicula';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-busqueda',
@@ -9,17 +10,17 @@ import { Router } from '@angular/router';
 })
 export class BusquedaComponent implements OnInit
 {
-  peliculas : Pelicula[] = [];
-  pelicula : Pelicula = new Pelicula("", tipo.Otros, new Date(), 0, "");
+  peliculas : any;
+  pelicula : any;
 
-  constructor(private router: Router) 
+  constructor(private router: Router, private data : DataService) 
   {
 
   }
 
-  ngOnInit(): void 
+  async ngOnInit()
   {
-    this.peliculas = Pelicula.getLocalStorage();
+    this.peliculas = await this.data.getMovies();
   }
 
   public OnNewClick()

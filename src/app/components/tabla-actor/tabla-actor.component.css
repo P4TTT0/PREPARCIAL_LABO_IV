@@ -1,0 +1,27 @@
+.table
+{
+    background-color: #43403B;
+    border-radius: 10px;
+    color: #F4E9CD;
+}
+
+th
+{
+    padding: 15px;
+    text-align: center;
+}
+
+td
+{
+    background-color: #2E2C28;
+    color: #F4E9CD;
+    border-bottom: solid 10px #5B5750;
+    text-align: center;
+}
+
+.btn-style
+{
+    background-color: #E8E9CD;
+    border-radius: 5px 5px 0px 5px;
+    margin-right: 5px;
+}
